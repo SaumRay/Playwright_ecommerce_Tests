@@ -34,7 +34,7 @@ jobs:
 
       # Step 5: Run tests
       - name: Run Playwright tests
-        run: npx playwright test --project=chromium --ignore=tests/visual.test.js
+        run: npx playwright test --project=chromium tests/login.test.js tests/inventory.test.js tests/cart.test.js tests/checkout.test.js tests/e2e.test.js
         # Tests run headless automatically in CI (no headed mode needed)
 
       # Step 6: Upload HTML report as artifact
